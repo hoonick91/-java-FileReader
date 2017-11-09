@@ -1,5 +1,5 @@
 # 입력값을 입력해주는 FileReader
-![probelm](https://github.com/jhoon07/-java-FileReader/blob/master/problem.png)
+<img src="https://github.com/jhoon07/-java-FileReader/blob/master/problem.png" width="50%" height="50%" />
 
 
 위와 같은 상황에서 입력값을 자동으로 입력해준다.
