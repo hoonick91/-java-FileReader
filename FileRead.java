@@ -19,6 +19,7 @@ public class FileRead {
 
         ArrayList list = new ArrayList();
         BufferedReader br = new BufferedReader(new FileReader(this.path));
+
         while (true) {
 
             String line = br.readLine();
@@ -26,7 +27,9 @@ public class FileRead {
             String[] nums = line.split("\\s");
 
             for (String num : nums) {
-                list.add(num);
+
+
+                list.add(Integer.parseInt(num));
             }
         }
 
