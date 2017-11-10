@@ -11,7 +11,7 @@ FileReader.java를 패키지에 추가한다.
 FileRead file = new FileRead("읽어올 파일 경로");
 ArrayList lists = file.read();
         
-Iterator it = lists.iterator();
+Iterator<Integer> it = lists.iterator();
         
 it.next()...
 ```
@@ -20,19 +20,12 @@ it.next()...
 
 위 그림의 경우 첫번째 줄에는 삼각형의 크기가 주어진다.
 
-convert() 함수는 위의 it.next()는 object로 값이 나온다.
-이를 Integer로 바꾸기 위한 함수
-
-
 ```
-static int convert(Object obj){
-    return Integer.parseInt(obj.toString());
-}
 ...
 ...
 ...
 
-int input = convert(it.next());
+int input = it.next();
 ```
 
 다음 반복적으로 자신이 원하는 배열의 위치에 값을 넣어주면 된다.
@@ -40,7 +33,7 @@ int input = convert(it.next());
 ```
 for (int i = 1; i < input + 1; i++) {
 		for (int j = 1; j < i + 1; j++) {
-		    num[i][j] = convert(it.next());
+		    num[i][j] = it.next();
 		}
 }
 
